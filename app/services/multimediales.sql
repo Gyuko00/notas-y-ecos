@@ -1,6 +1,6 @@
-CREATE DATABASE multimediales;
+CREATE DATABASE ;
 
-USE multimediales;
+USE ;
 
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
