@@ -1,6 +1,6 @@
 # 🎵 Notas & Ecos - Aplicación Web Musical
 
-**Notas & Ecos** es una aplicación web desarrollada en PHP, HTML y MySQL, pensada para compartir gustos musicales e integrar herramientas digitales interactivas relacionadas con la música y el aprendizaje.
+**Notas & Ecos** es una aplicación web desarrollada en PHP, HTML, CSS y MySQL, pensada para compartir gustos musicales e integrar herramientas digitales interactivas relacionadas con la música y el aprendizaje.
 
 ---
 
