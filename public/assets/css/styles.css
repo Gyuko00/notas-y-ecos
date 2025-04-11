@@ -1,0 +1,1201 @@
+<<<<<<< HEAD
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo general neutro */
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #1e3a5f; /* Azul oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .nav-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #000; /* Rojo elegante */
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade 10s infinite;
+}
+
+.slider .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Banners */
+.banner {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff; /* Fondo rojo */
+}
+
+.banner-item {
+    background-color: #1e3a5f; /* Fondo azul */
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.banner-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.banner-item h3 {
+    margin: 10px 0 0;
+}
+
+.banner-item:hover {
+    transform: scale(1.05);
+    background-color: #164061; /* Azul más intenso */
+}
+
+/* Divs con texto e imagen */
+.text-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+.text-image-item {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-image-item img {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.text-image-item .content {
+    flex: 1;
+}
+
+.text-image-item .content h3 {
+    margin-bottom: 10px;
+    color: #1e3a5f; /* Azul para títulos */
+}
+
+.text-image-item .content p {
+    font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a5f; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #fff; /* Rojo */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* NavBar General */
+.navbar {
+    background-color: #1d1d1d; /* Fondo oscuro */
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Items de Navegación */
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6b6b; /* Rojo vibrante */
+    border-bottom: 2px solid #ff6b6b; /* Indicador en hover */
+}
+
+/* Menú Responsive */
+.menu-icon {
+    display: none; /* Por defecto, escondido */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1d1d1d;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+/* Sección de Herramientas */
+#herramientas {
+    padding: 50px 20px;
+    background-color: #f7f7f7; /* Fondo claro */
+    color: #333;
+}
+
+#herramientas .header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#herramientas .header h1 {
+    font-size: 36px;
+    color: #0044cc; /* Azul temático */
+}
+
+#herramientas .header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Sección individual */
+.tool-section {
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tool-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ff6b6b; /* Rojo temático */
+}
+
+.tool-section iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tool-section .btn-download {
+    display: inline-block;
+    background-color: #0044cc; /* Azul temático */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tool-section .btn-download:hover {
+    background-color: #002a80; /* Azul oscuro */
+}
+
+/* Banner superior */
+.banner-contacto {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 2px solid #ccc;
+}
+.banner-contacto h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.banner-contacto p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Contenedor principal */
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Asegura que los elementos ocupen el mismo alto */
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+/* Imagen decorativa */
+.imagen-contacto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-contacto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+.formulario-contacto {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.formulario-contacto h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario-contacto p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+.formulario-contacto .form-group {
+    margin-bottom: 15px;
+}
+.formulario-contacto label {
+    display: block;
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+}
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #0078D7; /* Azul neutro */
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.2);
+}
+.formulario-contacto .btn-enviar {
+    display: inline-block;
+    background-color: #0078D7;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.formulario-contacto .btn-enviar:hover {
+    background-color: #005BB5; /* Azul más oscuro */
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .contacto-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-contacto img {
+        max-height: 300px;
+    }
+}
+
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Card principal */
+.login-card {
+    display: flex;
+    width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Imagen al lado del formulario */
+.login-image img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Formulario */
+.login-form {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #0078D7;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background: #0078D7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background: #005BB5;
+}
+
+/* Pie de página del formulario */
+.login-footer {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-footer a {
+    color: #0078D7;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+=======
+/* Fondo general con tema musical */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1b1b1b, #2d2d2d);
+    color: #ffffff;
+}
+
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url('ruta-a-tu-imagen-musical.jpg') center center / cover no-repeat, #000;
+    background-blend-mode: overlay;
+}
+
+/* Card principal */
+.login-card {
+    display: flex;
+    width: 850px;
+    background: rgba(25, 25, 25, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+/* Imagen temática musical */
+.login-image img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-right: 3px solid #f04848;
+}
+
+/* Formulario */
+.login-form {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f04848;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    font-size: 1rem;
+    color: #dddddd;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #2d2d2d;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #f04848;
+    box-shadow: 0 0 8px #f04848;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #f04848, #c039c5);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+    background: linear-gradient(90deg, #c039c5, #f04848);
+    transform: scale(1.05);
+}
+
+/* Pie de página del formulario */
+.login-footer {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+.login-footer a {
+    color: #f04848;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#banner {
+    background-color: #1b1b1b;
+    /* Gris claro neutro */
+    padding: 40px 0;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Menos fuerte el sombra */
+    color: #fff;
+    /* Color oscuro para el texto */
+}
+
+#banner p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-style: italic;
+    color: #c7a008;
+    /* Gris más claro para el texto */
+}
+
+/* Estilo para el carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Estilo para la sección de recomendaciones */
+#recomendaciones {
+    text-align: center;
+    color: #ffffff;
+    padding: 60px 0;
+    /* Espaciado superior e inferior */
+}
+
+#recomendaciones h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #c7a008;
+    /* Dorado */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo para la sección de banners informativos */
+#banners {
+    padding: 40px 20px;
+}
+
+.banner-item {
+    background: rgba(25, 25, 25, 0.9);
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 6px solid #f04848;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.banner-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.banner-item h3 {
+    font-size: 1.8rem;
+    color: #c7a008;
+    /* Dorado */
+    margin-bottom: 10px;
+}
+
+.banner-item p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Estilo general para las secciones */
+.section {
+    padding: 60px 0;
+    background-color: #1b1b1b;
+    color: #f9d342;
+    /* Color dorado para las letras */
+    text-align: center;
+}
+
+/* Títulos de las secciones */
+.section-title {
+    font-size: 2.5rem;
+    color: #f04848;
+    /* Rojo para los títulos */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo para el contenido de las secciones */
+.section p {
+    font-size: 1.2rem;
+    color: #dddddd;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Contenedor de los iframes (Kahoot, Scratch, App Inventor) */
+.kahoot-iframe-container,
+.scratch-container,
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    /* Fondo opaco */
+    padding: 20px;
+}
+
+/* Estilo para los iframes */
+.kahoot-iframe-container iframe,
+.scratch-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Estilo específico para las cartas del Home */
+#home-card-1,
+#home-card-2,
+#home-card-3 {
+    background-color: rgba(25, 25, 25, 0.95);
+    /* Fondo oscuro */
+    color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover para las cartas */
+#home-card-1:hover,
+#home-card-2:hover,
+#home-card-3:hover {
+    transform: translateY(-10px);
+    /* Efecto de elevación */
+}
+
+#home-card-1 h3,
+#home-card-2 h3,
+#home-card-3 h3 {
+    font-size: 1.5rem;
+    color: #f04848;
+    margin-bottom: 15px;
+}
+
+#home-card-1 p,
+#home-card-2 p,
+#home-card-3 p {
+    font-size: 1rem;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+
+/* Estilo específico para las cartas de Podcasts */
+#podcast-card-1,
+#podcast-card-2,
+#podcast-card-3 {
+    background-color: rgba(25, 25, 25, 0.95);
+    /* Fondo oscuro */
+    color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover para las cartas */
+#podcast-card-1:hover,
+#podcast-card-2:hover,
+#podcast-card-3:hover {
+    transform: translateY(-10px);
+    /* Efecto de elevación */
+}
+
+#podcast-card-1 h3,
+#podcast-card-2 h3,
+#podcast-card-3 h3 {
+    font-size: 1.5rem;
+    color: #f04848;
+    margin-bottom: 15px;
+}
+
+#podcast-card-1 p,
+#podcast-card-2 p,
+#podcast-card-3 p {
+    font-size: 1rem;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+
+
+audio {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Estilo para la sección de App Inventor */
+.app-container {
+    text-align: center;
+}
+
+.app-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-download {
+    background-color: #f04848;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: #c039c5;
+    transform: scale(1.05);
+}
+
+/* Fondo alternativo para las secciones con clase .alt-background */
+.alt-background {
+    background-color: #2d2d2d;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 60px 0;
+    background-color: #1b1b1b;
+    color: #f9d342;
+    /* Color dorado para las letras */
+    text-align: center;
+}
+
+/* Banner de texto superior */
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 2.8rem;
+    color: #f04848;
+    /* Rojo para los títulos */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/* Contenido del formulario y la imagen */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para la imagen de contacto */
+.contact-image {
+    flex: 1;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    max-width: 500px;
+}
+
+/* Estilo para el formulario */
+.contact-form {
+    flex: 1;
+    background-color: rgba(25, 25, 25, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    color: #f04848;
+    /* Rojo para las etiquetas */
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9d342;
+    /* Fondo dorado para campos de entrada */
+    border: none;
+    border-radius: 6px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #f04848;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c039c5;
+    transform: scale(1.05);
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-image img {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+/* Estilos generales de la navbar */
+.navbar {
+    background-color: #1b1b1b;
+    /* Fondo oscuro */
+    color: #f9d342;
+    /* Texto dorado */
+    padding: 15px 30px;
+    border-bottom: 3px solid #f04848;
+    /* Línea roja debajo de la navbar */
+    box-sizing: border-box;
+    /* Asegura que el padding no cause desplazamiento */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho */
+    position: sticky;
+    /* Fija la navbar en la parte superior al hacer scroll */
+    top: 0;
+    z-index: 9999;
+    /* Asegura que la navbar quede por encima de otros elementos */
+}
+
+/* Estilo de la marca en la navbar */
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #f9d342;
+    /* Dorado */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #f04848;
+    /* Rojo al pasar el cursor */
+}
+
+/* Estilo de los elementos de la navbar */
+.nav-item {
+    margin: 0 15px;
+}
+
+/* Estilo de los enlaces de la navbar */
+.nav-link {
+    color: #f9d342;
+    /* Color dorado */
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f04848;
+    /* Rojo al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* Estilos para el botón de la navbar en pantallas pequeñas */
+.navbar-toggler {
+    border-color: #f04848;
+    /* Rojo para el borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-color: #f04848;
+    /* Color rojo para el icono */
+}
+
+/* Estilos cuando el menú está colapsado */
+.navbar-collapse {
+    background-color: rgba(25, 25, 25, 0.9);
+    /* Fondo oscuro semi-transparente */
+    padding: 10px 0;
+    width: 100%;
+    /* Asegura que el menú colapsado ocupe todo el ancho */
+}
+
+/* Alineación y diseño de los elementos del menú */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    /* Alinea los elementos a los extremos */
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo de los enlaces al lado derecho */
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+/* Estilo para el menú de navegación responsivo */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        background-color: transparent;
+        /* Transparente */
+    }
+
+    .navbar-toggler-icon {
+        background-color: #f04848;
+        /* Rojo para el icono */
+    }
+}
+
+/* Estilos generales del footer */
+footer {
+    background-color: #1b1b1b;
+    /* Fondo oscuro */
+    color: #f9d342;
+    /* Color dorado para las letras */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid #f04848;
+    /* Línea roja arriba del footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hover effect for the copyright text (optional) */
+footer p:hover {
+    color: #f04848;
+    /* Rojo al pasar el cursor */
+}
+
+/* Estilo del Avatar */
+#avatar-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    text-align: center;
+    z-index: 1000;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#avatar-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#avatar-text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+>>>>>>> 3a3aa64 (Aplicación Web con herramientas digitales: Kahoot, Scratch, Podcast, App Inventor y un Agente Inteligente)
