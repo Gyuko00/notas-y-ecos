@@ -10,5 +10,3 @@ CREATE TABLE usuarios (
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO usuarios (nombreUsuario, contrasena, email) 
-VALUES ('dayala', SHA2('admin', 256), 'dayala@correo.com');
