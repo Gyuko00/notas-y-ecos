@@ -2,9 +2,9 @@
 
 class Database
 {
-    private $host = 'localhost'; 
-    private $db_name = 'multimediales';
-    private $username = 'root'; 
+    private $host = ''; 
+    private $db_name = '';
+    private $username = ''; 
     private $password = ''; 
     private $conn;
 
