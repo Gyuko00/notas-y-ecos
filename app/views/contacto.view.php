@@ -56,12 +56,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             // Configuración del servidor SMTP de Gmail
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
+
             // Tu contraseña o contraseña de aplicación
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
+
 
             // Configuración del correo
             // Tu correo de destino
