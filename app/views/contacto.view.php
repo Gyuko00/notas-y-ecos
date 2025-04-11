@@ -59,14 +59,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'josuehernandezorro147@gmail.com'; // Tu dirección de correo
-            $mail->Password = 'euju ysmt gfyw mnkw';       // Tu contraseña o contraseña de aplicación
+            // Tu contraseña o contraseña de aplicación
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             // Configuración del correo
-            $mail->setFrom('josuehernandezorro147@gmail.com', 'Formulario de Contacto');
-            $mail->addAddress('josuehernandezorro147@gmail.com', 'Josué Hernández'); // Tu correo de destino
+            // Tu correo de destino
 
             $mail->isHTML(true);
             $mail->Subject = 'Nuevo mensaje de contacto';
