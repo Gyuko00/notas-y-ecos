@@ -39,20 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             // Configuración del servidor SMTP de Gmail
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
-
-            $mail->isHTML(true);
-            $mail->Subject = 'Nuevo mensaje de contacto';
-            $mail->Body    = "
-                <h3>Nuevo mensaje desde el formulario de contacto:</h3>
-                <p><strong>Nombre:</strong> $nombre</p>
-                <p><strong>Correo:</strong> $email</p>
-                <p><strong>Mensaje:</strong><br>$mensaje</p>
-            ";
 
             // Enviar correo
             if ($mail->send()) {
