@@ -1,9 +1,7 @@
-<<<<<<< HEAD
+
 <?php
 
 require_once('layouts/nav.layout.php');
-
-?>
 
 <section id="contacto">
     <!-- Banner de texto -->
@@ -40,8 +38,6 @@ require_once('layouts/nav.layout.php');
             </form>
         </div>
     </div>
-=======
-<?php
 
 require_once('layouts/nav.layout.php');
 
@@ -95,8 +91,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // echo "Método de solicitud no válido.";
 }
 
-?>
-
 <section id="contacto">
     <div class="container">
         <div class="contact-header">
@@ -126,5 +120,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
->>>>>>> 3a3aa64 (Aplicación Web con herramientas digitales: Kahoot, Scratch, Podcast, App Inventor y un Agente Inteligente)
 </section>
